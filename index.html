@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+        <div id="site">
+            <h1>Formulário</h1>
+
+
+            <form action="https://www.botecodigital.dev.br/web/processar.php" method="POST">
+
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Ex. Rodrigo" value="Rodrigo">
+                </div>
+
+                <div>
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="email" value="rodrigo@gmail.com">
+                </div>
+                <div>
+                    <label for="idade">Idade: </label>
+                    <input type="number"   min="0" max="80" name="idade" id="idade">
+                </div>
+
+                <div>
+                    <label for="altura">Altura: </label>
+                    <input type="number" step="0.01" min="0" max="3" name="altura" id="altura">
+                </div>
+                <div>
+                    <label for="cidade">Cidade</label>
+                    <select name="cidade" id="cidade">
+                        <option value="URU">Uruguaiana</option>
+                        <option value="POA">Porto Alegre</option>
+                        <option value="PEL">Pelotas</option>
+                        <option value="CAX" selected>Caxias do Sul</option>
+                        <option value="QUA">Quaraí</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="nascimento">Nascimento: </label>
+                    <input type="date" name="nascimento" id="nascimento" value="1985-06-15">
+                </div>
+
+                <div>
+                    <label for="hora">Hora: </label>
+                    <input type="time" name="hora" id="hora">
+                </div>
+
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <input type="radio" name="sexo" id="sexo-m" value="Masculino">
+                    <label for="sexo-m">Masculino</label>
+                    <br>
+                    <input type="radio" name="sexo" id="sexo-f" value="Feminino">
+                    <label for="sexo-f">Feminino</label>
+                </fieldset>
+
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+        </div>
+    
+</body>
+</html>

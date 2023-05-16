@@ -12,21 +12,20 @@
         <div id="site">
             <h1>Formulário</h1>
 
-
             <form action="https://www.botecodigital.dev.br/web/processar.php" method="POST">
 
                 <div>
                     <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome" placeholder="Ex. Rodrigo" value="Rodrigo">
+                    <input type="text" name="nome" id="nome" placeholder="Ex. Rodrigo" value="Fabio">
                 </div>
 
                 <div>
                     <label for="email">E-mail: </label>
-                    <input type="email" name="email" id="email" value="rodrigo@gmail.com">
+                    <input type="email" required name="email" id="email" value="rodrigo@gmail.com">
                 </div>
                 <div>
                     <label for="idade">Idade: </label>
-                    <input type="number"   min="0" max="80" name="idade" id="idade">
+                    <input type="number" min="0" max="80" name="idade" id="idade">
                 </div>
 
                 <div>
@@ -39,8 +38,8 @@
                         <option value="URU">Uruguaiana</option>
                         <option value="POA">Porto Alegre</option>
                         <option value="PEL">Pelotas</option>
-                        <option value="CAX" selected>Caxias do Sul</option>
-                        <option value="QUA">Quaraí</option>
+                        <option value="CAX">Caxias do Sul</option>
+                        <option value="QUA" selected>Quaraí</option>
                     </select>
                 </div>
 
@@ -61,7 +60,52 @@
                     <br>
                     <input type="radio" name="sexo" id="sexo-f" value="Feminino">
                     <label for="sexo-f">Feminino</label>
+
+                    <br>
+                    <input checked type="radio" name="sexo" id="sexo-nao-infor" value="Não Informado">
+                    <label for="sexo-nao-infor">Não Informado</label>
                 </fieldset>
+
+                <fieldset>
+                    <legends>Hobby</legends>
+                    <div>
+                        <input checked type="checkbox" name="livros" id="livros" value="Livros">
+                        <label for="livros">Livros</label>
+                    </div>
+                    <div>
+                        <input checked type="checkbox" name="musica" id="musica" value="Música">
+                        <label for="musica">Música</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="jogar" id="jogar" value="Jogar">
+                        <label for="jogar">Jogar</label>
+                    </div>
+                </fieldset>
+
+                <br>
+
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" placeholder="Inform senha">
+                </div>
+
+
+
+                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea cols="60" rows="6" name="mensagem" id="mensagem">Um comentario legal</textarea>
+                </div>
+
+                <div>
+                    <label for="range">Range: </label>
+                    <input type="range" name="range" min="0" max="100" value="0">
+                </div>
+
+                <div>
+                    <label for="cor">Cor: </label>
+                    <input type="color" name="cor" id="cor">
+                </div>
+
 
                 <div>
                     <input type="submit" value="Enviar">
